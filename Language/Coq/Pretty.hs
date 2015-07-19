@@ -5,9 +5,7 @@ module Language.Coq.Pretty (
   module Text.PrettyPrint.ANSI.Leijen
   ) where
 
-import Control.Monad
-import Data.List (intersperse)
-import Data.Maybe
+import Prelude hiding ((<$>))
 
 import Language.Coq.Syntax
 
