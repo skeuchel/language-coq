@@ -26,7 +26,6 @@ instance Pretty Identifier where
 
 instance Pretty Root where
   pretty (Root ss) =
-    text "Require Import Coq.Program.Tactics." <$>
     vsep (prettyList ss) <$> empty
 
 instance Pretty Sentence where
